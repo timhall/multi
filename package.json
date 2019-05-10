@@ -1,0 +1,45 @@
+{
+  "name": "@timhall/multi",
+  "version": "0.0.0",
+  "author": "Tim Hall <tim.hall.engr@gmail.com>",
+  "license": "MIT",
+  "description": "Multiselect hook and component for React",
+  "repository": "https://github.com/timhall/multi.git",
+  "homepage": "https://github.com/timhall/multi",
+  "keywords": [
+    "multiselect",
+    "select",
+    "react",
+    "hook"
+  ],
+  "main": "dist/multi.cjs.min.js",
+  "module": "dist/multi.es.js",
+  "browser": "dist/multi.umd.min.js",
+  "scripts": {
+    "test": "jest",
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "preset": "ts-jest",
+    "testRegex": "/__tests__/.*\\.[jt]sx?$"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "printWidth": 100
+  },
+  "files": [
+    "dist/"
+  ],
+  "devDependencies": {
+    "jest": "^24.8.0",
+    "rollup": "^1.11.3",
+    "rollup-plugin-filesize": "^6.0.1",
+    "rollup-plugin-terser": "^4.0.4",
+    "rollup-plugin-typescript": "^1.0.1",
+    "ts-jest": "^24.0.2",
+    "tslib": "^1.9.3",
+    "typescript": "^3.4.5"
+  }
+}
